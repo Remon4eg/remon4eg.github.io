@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0px;
+}
+
+.battery-container {
+    display: flex;
+    gap: 20px;
+}
+
+.battery {
+    width: 100px;   /* Ширина батарейки */
+    height: 50px;   /* Висота батарейки */
+    border: 2px solid #000000;
+    position: relative;
+    margin-top: 10px;
+}
+
+/* Індикатор заряду (горизонтальний) */
+.battery::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #4CAF50; /* Зелений за замовчуванням */
+}
+
+/* Верхній контакт (тепер праворуч) */
+.battery::after {
+    content: '';
+    position: absolute;
+    right: -10px;   /* Виступає праворуч */
+    top: 15px;
+    width: 10px;
+    height: 20px;
+    background-color: #000000;
+}
+
+/* Кольори заряду */
+.battery.low::before {
+    width: 25%;
+    background-color: #f44336; /* Червоний */
+}
+
+.battery.medium::before {
+    width: 50%;
+    background-color: #FFC107; /* Жовтий */
+}
+
+.battery.high::before {
+    width: 80%;
+    background-color: #4CAF50; /* Зелений */
+}

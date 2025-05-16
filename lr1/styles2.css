@@ -53,7 +53,6 @@ th, td {
   margin: 20px 0;
 }
 
-/* ДОДАНО: центрування кнопок/зображень у .links */
 .links {
   display: flex;
   justify-content: center;

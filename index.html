@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="utf-8">
     <title>Developer Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#portfolio">Портфоліо</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+        </ul>
+    </nav>
+
     <div class="page-container">
         <div class="left-side">
-            <img src="photo1.jpg" alt="Фото" class="profile-photo">
+            <img src="photo1.jpg" alt="Фото Владислава Гусара" class="profile-photo">
             <h2>Особисті дані</h2>
             <hr class="line-white">
             <p><b>Ім’я</b><br>Владислав Гусар</p>
             <p><b>Адреса</b><br>вул. Галицька, буд. 133 <br> 76008 Івано-Франківськ</p>
             <p><b>Email</b><br>remon4eg.main@gmail.com</p>
-            <p><b>Дата народження</b><br> 10.08.2007</p>
-            
+            <p><b>Дата народження</b><br>10.08.2007</p>
+
             <h2><br>Інтереси</h2>
             <hr class="line-white">
             <ul>
@@ -26,10 +36,11 @@
 
             <h2><br>Мови</h2>
             <hr class="line-white">
-            <p>Українська</p>
-            <p>Англійська (рівень А-1)</p>
+            <p>Українська (рідна)</p>
+            <p>Англійська (A1 - Beginner)</p>
         </div>
-        <div class="right-side">
+
+        <div class="right-side" id="home">
             <h1>Гусар Владислав</h1>
             <hr class="line-black">
             <h3>Веб-розробник</h3>
@@ -64,14 +75,34 @@
 
             <hr class="line-black">
             <h3>Про мене</h3>
-            <p><br>Владік, 18 рочків</p>
+            <p><br>Молодий і мотивований веб-розробник з базовими навичками в HTML, CSS, JavaScript, C++ та Python. Постійно вдосконалюю свої знання та практикуюсь у створенні веб-додатків.</p>
             <hr class="line-black">
+
             <h3>Досвід</h3>
-            <p><br><strong>Frontend Developer</strong> – Microsoft (2022-2025)</p>
+            <p><br><strong>Frontend Developer</strong> – Особисті проєкти (2022-2025)</p>
             <hr class="line-black">
+
             <h3>Освіта</h3>
             <p><br><strong>Коледж електронних приладів</strong> – Програмна інженерія (2022-2025)</p>
         </div>
     </div>
+
+    <!-- Портфоліо -->
+    <section id="portfolio" class="portfolio-section">
+        <h3>Портфоліо</h3>
+        <div class="portfolio-links">
+            <a href="LR2/index.html" target="_blank" class="portfolio-button">GitHub</a>
+            <a href="LR4/index.html" target="_blank" class="portfolio-button">Сайт 1</a>
+            <a href="" target="_blank" class="portfolio-button">Сайт 2</a>
+        </div>
+    </section>
+
+    <!-- Контакти -->
+    <section id="contacts" class="contacts-section">
+        <h3>Контакти</h3>
+        <p>Email: remon4eg.main@gmail.com</p>
+        <p>Телефон: +380 68 4342 567</p>
+    </section>
+
 </body>
 </html>

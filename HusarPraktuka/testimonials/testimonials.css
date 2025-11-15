@@ -1,0 +1,634 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo-travel {
+  font-size: 50px
+}
+
+.logo-img {
+  width: 60px;  /* або будь-яке інше значення */
+  height: auto;
+}
+/* Logo зліва */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  justify-self: start;
+}
+
+
+.logo img {
+  width: 25px;
+  height: 25px;
+  font-size: 22px;
+}
+
+/* Меню по центру */
+.nav {
+  justify-self: center;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+}
+
+/* Кнопка справа */
+.btn {
+  background: #f97316;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  justify-self: center;
+}
+
+.btn:hover {
+  background: #d65e0e;
+}
+
+/* --- СТИЛІ SWIPER: Обов'язково підключити бібліотеку! --- */
+
+/* Контейнер Секції */
+#projects-slider {
+    padding: 80px 0;
+    background-color: #000; /* Темний фон для контрасту */
+    color: #fff;
+}
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+}
+
+.projects-header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Кнопка "Обговорити проєкт" у стилі "Hire Me" */
+.cta-btn {
+    background-color: #f47920; /* Оранжевий акцент */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #ff6b3d; /* Трохи світліше */
+}
+
+/* --- СТИЛІ КАРТОК ПРОЄКТІВ --- */
+
+/* --- СТИЛІ SWIPER: Обов'язково підключити бібліотеку! --- */
+
+/* Контейнер Секції */
+/* --- ГЛАВНА СЕКЦІЯ ТА ХЕДЕР --- */
+/* --- СТИЛІ СЕКЦІЇ ТА ХЕДЕРА --- */
+/* --- СЕКЦІЯ ТА ХЕДЕР (без змін) --- */
+#projects-slider-section {
+    padding: 60px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 40px;
+}
+
+.projects-header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #222; 
+}
+
+.cta-btn {
+    background-color: #f47920; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+/* --- SWIPER КОНТЕЙНЕР (без змін) --- */
+.featured-swiper-cards {
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+/* --- КАРТКИ (ОДНАКОВІ СТИЛІ) --- */
+.project-grid-card {
+    background-color: #fff;
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none; 
+    color: inherit;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.project-grid-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- ЗОБРАЖЕННЯ: ДОДАНО HOVER-ЕФЕКТ --- */
+.card-image-wrapper {
+    width: 100%;
+    padding-top: 66.66%;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s;
+}
+/* НОВЕ ДОПОВНЕННЯ: Збільшення зображення при наведенні на картку */
+.project-grid-card:hover .card-image-wrapper img { 
+    transform: scale(1.05);
+}
+
+
+/* --- КОНТЕНТ КАРТКИ (без змін) --- */
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+.card-category {
+    color: #f47920; 
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    flex-grow: 1; 
+}
+
+.case-study-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #f47920; 
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+/* --- СТИЛІ SWIPER НАВІГАЦІЯ --- */
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #f47920 !important; 
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+    /* НОВЕ ДОПОВНЕННЯ: Приховуємо стрілки на мобільних, якщо вони не потрібні */
+    display: block; 
+}
+
+.swiper-pagination-bullet-active {
+    background: #f47920 !important; 
+}
+
+/* --- АДАПТИВНІСТЬ --- */
+@media (max-width: 767px) {
+    /* Приховуємо стрілки на дуже маленьких екранах, 
+       оскільки користувач використовуватиме свайп */
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none; 
+    }
+
+    .projects-header {
+        /* Забезпечуємо вертикальне вирівнювання на мобільних, 
+           якщо кнопки не поміщаються в ряд */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cta-btn {
+        width: 100%; /* Кнопка "Обговорити проєкт" на всю ширину */
+        margin-top: 15px;
+    }
+}
+footer {
+    font-family: Arial, sans-serif;
+  }
+  .footer-top {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 40px 20px 20px;
+  }
+  .logo-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .footer-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .logo-name {
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  .footer-menu {
+    margin-bottom: 20px;
+  }
+  .footer-menu a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  .footer-social img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-bottom {
+    background-color: #4a4a4a;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 13px;
+  }
+  .footer-bottom span {
+    color: #ff6f00;
+    font-weight: bold;
+  }
+
+.social-icon {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  margin: 0 6px;
+  font-size: 14px;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #f47920;
+}
+
+.footer-nav {
+  margin-bottom: 15px;
+}
+
+.footer-nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #f47920;
+}
+
+.footer-copy {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ddd;
+}
+
+.highlight {
+  color: #f47920;
+  font-weight: 700;
+}
+
+/* Стилі для кнопки "Нагору" */
+#scrollToTopBtn {
+  display: none; /* Спочатку приховати кнопку */
+  position: fixed; /* Зафіксувати позицію на екрані */
+  bottom: 20px; /* Відступ від низу */
+  width: 50px;
+  height: 50px;
+  right: 30px; /* Відступ від правого краю */
+  z-index: 99; /* Переконатися, що кнопка поверх інших елементів */
+  border: none; /* Прибрати стандартну рамку */
+  outline: none; /* Прибрати контур фокусу */
+  background-color: #ff6b3d; /* Колір вашого оранжевого акценту */
+  color: white; /* Колір тексту/стрілки */
+  cursor: pointer; /* Зробити курсор "клікабельним" */
+  padding: 15px; /* Внутрішній відступ */
+  border-radius: 50%; /* Зробити кнопку круглою */
+  font-size: 18px; /* Розмір стрілки */
+  line-height: 0; /* Вирівнювання символу стрілки */
+  transition: background-color 0.3s, opacity 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #e55a30; /* Темніший колір при наведенні */
+}
+
+/* ===== Pricing Section ===== */
+
+.pricing-section {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: #fff;
+    width: 320px;
+    padding: 35px 30px;
+    border-radius: 25px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.12);
+}
+
+/* Popular/Featured card */
+.featured {
+    border: 3px solid #ff6600;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background: #ff6600;
+    color: #fff;
+    padding: 6px 14px;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.plan-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+.plan-desc {
+    font-size: 15px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px;
+    text-align: left;
+}
+
+.plan-features li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    font-size: 15px;
+}
+
+.plan-features li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ff6600;
+}
+
+.plan-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff6600;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.plan-btn:hover {
+    background: #e05500;
+}
+
+/* ===== Modal Background ===== */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* ===== Modal Content ===== */
+.modal-content {
+    background: #fff;
+    width: 420px;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Close button */
+.close-modal {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close-modal:hover {
+    color: #ff6600;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* Form styles */
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-form input,
+.modal-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+    border-color: #ff6600;
+}
+
+.modal-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Submit button */
+.modal-btn {
+    margin-top: 10px;
+    background: #ff6600;
+    color: white;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.modal-btn:hover {
+    background: #e05600;
+}
+
+/* Стилі для кнопки "Нагору" */
+#scrollToTopBtn {
+  display: none; /* Спочатку приховати кнопку */
+  position: fixed; /* Зафіксувати позицію на екрані */
+  bottom: 20px; /* Відступ від низу */
+  width: 50px;
+  height: 50px;
+  right: 30px; /* Відступ від правого краю */
+  z-index: 99; /* Переконатися, що кнопка поверх інших елементів */
+  border: none; /* Прибрати стандартну рамку */
+  outline: none; /* Прибрати контур фокусу */
+  background-color: #ff6b3d; /* Колір вашого оранжевого акценту */
+  color: white; /* Колір тексту/стрілки */
+  cursor: pointer; /* Зробити курсор "клікабельним" */
+  padding: 15px; /* Внутрішній відступ */
+  border-radius: 50%; /* Зробити кнопку круглою */
+  font-size: 18px; /* Розмір стрілки */
+  line-height: 0; /* Вирівнювання символу стрілки */
+  transition: background-color 0.3s, opacity 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #e55a30; /* Темніший колір при наведенні */
+}

@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* !!! ВИЗНАЧЕННЯ CSS ЗМІННИХ (ОБОВ'ЯЗКОВО ДЛЯ НОВИХ СЕКЦІЙ) !!! */
+:root {
+  --primary-color: #ff6600; /* Помаранчевий акцент для нових секцій */
+  --text-color: #333; /* Основний темний текст */
+  --background-color: #f7f7f7; /* Світло-сірий фон секцій */
+  --light-bg: #fff; /* Білий фон */
+  --font-family: Arial, sans-serif; 
+}
+
+
+body {
+  font-family: var(--font-family);
+  background: var(--light-bg);
+  color: var(--text-color);
+  line-height: 1.6; /* Додано для кращої читабельності */
+}
+
+/* Додатковий контейнер для нових секцій */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==================================== */
+/* 2. Header Styles (Ваші оригінальні) */
+/* ==================================== */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 20px 60px;
+  /* Додаємо нижню межу, як у прикладі Mumair, для візуального розділення */
+  border-bottom: 1px solid #eee; 
+}
+
+/* Стилі логотипу (додано Mumair для прикладу) */
+.logo-travel {
+    /* Робимо його гнучким, щоб елементи були в ряд */
+    display: flex;
+    align-items: center; /* Вирівнювання зображення та тексту по вертикалі */
+    gap: 15px; /* Збільшуємо простір між лого та текстом */
+    
+    justify-self: start; /* Розміщення зліва в сітці хедера */
+    
+    /* Скидаємо розмір шрифту на 0, оскільки ми використовуємо окремий span/strong */
+    font-size: 0; 
+}
+
+/* Стилізація самого зображення (Оранжевий круг) */
+.logo-img {
+    width: 45px; /* Збільшуємо розмір оранжевого круга (наприклад, до 45px) */
+    height: 45px;
+    max-width: none; /* Забороняємо обмежувати розмір */
+}
+
+/* Стилізація тексту "Mumair" */
+.logo-travel span {
+    /* Робимо текст великим і жирним, як на прикладі */
+    font-size: 26px; /* Це розмір тексту "Mumair" */
+    font-weight: normal; /* Звичайний, бо жирний виділяється окремо */
+    color: #000; /* Чорний колір */
+}
+
+/* Стилізація першої літери "M" */
+.logo-travel strong {
+    /* Перша літера M у вас загорнута в <strong>, тому вона буде мати цей колір */
+    color: #000; /* Встановлюємо чорний для Mumair */
+    font-weight: bold;
+}
+/* Меню по центру */
+.nav {
+  justify-self: center;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: var(--primary-color);
+}
+
+/* Кнопка справа */
+.btn {
+  background: #f97316; /* Використовуйте цю змінну, щоб відповідала primary-color */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  justify-self: end; /* Змінено з center на end, щоб відповідати хедерам */
+}
+
+.btn:hover {
+  background: #d65e0e;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: #fff;
+    width: 420px;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Close button */
+.close-modal {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close-modal:hover {
+    color: var(--primary-color);
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* Form styles */
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-form input,
+.modal-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.modal-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Submit button */
+.modal-btn {
+    margin-top: 10px;
+    background: var(--primary-color);
+    color: white;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.modal-btn:hover {
+    background: #e05600;
+}
+
+/* ==================================== */
+/* Секція 404: Як Звичайна Секція */
+/* ==================================== */
+.error-page-section {
+    /* Прибираємо фіксовану висоту, використовуємо стандартний padding для секцій */
+    padding: 80px 0; 
+    display: flex;
+    align-items: center; 
+    background-color: var(--light-bg); /* Білий фон для інтеграції */
+}
+
+.error-grid {
+    display: grid;
+    /* Розділяємо простір 50/50: текст зліва, зображення справа */
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    gap: 40px;
+}
+
+/* --- Ліва частина (текст) --- */
+.error-text-content {
+    padding-right: 20px;
+}
+
+.error-code {
+    font-size: 100px; /* Зменшимо трохи, щоб краще вписати в секцію */
+    font-weight: 900;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.error-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.error-message {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.error-home-btn {
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* --- Права частина (зображення) --- */
+.error-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    height: 100%;
+}
+
+.error-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+footer {
+    font-family: Arial, sans-serif;
+  }
+  .footer-top {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 40px 20px 20px;
+  }
+  .logo-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .footer-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .logo-name {
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  .footer-menu {
+    margin-bottom: 20px;
+  }
+  .footer-menu a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  .footer-social img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-bottom {
+    background-color: #4a4a4a;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 13px;
+  }
+  .footer-bottom span {
+    color: #ff6f00;
+    font-weight: bold;
+  }
+
+.social-icon {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  margin: 0 6px;
+  font-size: 14px;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #f47920;
+}
+
+.footer-nav {
+  margin-bottom: 15px;
+}
+
+.footer-nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #f47920;
+}
+
+.footer-copy {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ddd;
+}
+
+.highlight {
+  color: #f47920;
+  font-weight: 700;
+}
+

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+
+    <link rel="stylesheet" href="testimonials.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css"
+        integrity="sha512-e8G4Z5/jYQ7B59K4M8qN/n7uQ4wGvW0L8eT/20C8/P28jQG/tY+Yg/4v9XFmR5t4J7lG9N6Hw7F1ZtH3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"
+        integrity="sha512-W4wW3/fF9GjJc5f8g4N/n7uQ4wGvW0L8eT/20C8/P28jQG/tY+Yg/4v9XFmR5t4J7lG9N6Hw7F1ZtH3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-travel">
+            <img class="logo-img" src="images/logocompany.png" alt="logo-travel" />
+            <span><strong>M</strong>umair</span>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="../projects/projects.html">Про мене</a></li>
+                <li><a href="../page404/page404.html">Послуги</a></li>
+                <li><a href="../page404/page404.html">Проєкти</a></li>
+                <li><a href="testimonials.html">Відгуки</a></li>
+                <li><a href="#" id="contactBtn">Зв'язок з нами</a></li>
+            </ul>
+        </nav>
+
+        <div class="modal" id="contactModal">
+            <div class="modal-content">
+                <span class="close-modal" id="closeModal">&times;</span>
+
+                <h2>Зв’язатися зі мною</h2>
+
+                <form class="modal-form">
+                    <label>Ваше ім’я</label>
+                    <input type="text" placeholder="Введіть ваше ім’я" required>
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Введіть ваш email" required>
+
+                    <label>Повідомлення</label>
+                    <textarea placeholder="Ваше повідомлення..." required></textarea>
+
+                    <button type="submit" class="modal-btn">Надіслати</button>
+                </form>
+            </div>
+        </div>
+
+        <a href="../page404/page404.html" class="btn">Завантажити CV</a>
+    </header>
+
+    <!-- ---------------- Projects Section ---------------- -->
+<section id="projects-slider-section">
+  <div class="projects-header">
+    <h2>Мої обрані роботи</h2>
+    <a href="#contact" class="cta-btn">Обговорити проєкт</a>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-grid-card">
+      <div class="card-image-wrapper">
+        <img src="images/pulse.jpg" alt="Макет мобільного застосунку Pulse">
+      </div>
+      <div class="card-content">
+        <span class="card-category">UI/UX Дизайн</span>
+        <h3 class="card-title">Фітнес-додаток "Pulse"</h3>
+        <p class="card-description">
+          Я створив повний UI/UX для мобільного трекера, зосередженого на юзабіліті та гейміфікації.
+          Результат: збільшення щоденної активності на 25%.
+        </p>
+        <a href="images/pulse.jpg" class="case-study-btn">Переглянути</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-grid-card">
+      <div class="card-image-wrapper">
+        <img src="images/luxshop.jpg" alt="Редизайн сайту LuxShop">
+      </div>
+      <div class="card-content">
+        <span class="card-category">Редизайн сайту</span>
+        <h3 class="card-title">E-commerce Редизайн "LuxShop"</h3>
+        <p class="card-description">
+          Проведено повний аудит юзабіліті та редизайн платформи.
+          Конверсія зросла на 15% завдяки оптимізованому процесу оформлення замовлення.
+        </p>
+        <a href="images/luxshop.jpg" class="case-study-btn">Переглянути</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-grid-card">
+      <div class="card-image-wrapper">
+        <img src="images/CloudFlow.png" alt="CloudFlow — дизайн SaaS лендингу">
+      </div>
+      <div class="card-content">
+        <span class="card-category">Лендинг</span>
+        <h3 class="card-title">SaaS Лендинг для "CloudFlow"</h3>
+        <p class="card-description">
+          Створено ефективний B2B лендинг, що чітко передає цінність продукту.
+          Дизайн зменшив показник відмов та збільшив кількість заявок.
+        </p>
+        <a href="images/CloudFlow.png" class="case-study-btn">Переглянути</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <button id="scrollToTopBtn" title="Go to top">&#9650;</button>
+
+    <!-- ---------------- Pricing Section ---------------- -->
+    <section class="pricing-section" id="pricing">
+        <h2 class="section-title">Пакети моїх послуг</h2>
+
+        <div class="pricing-container">
+
+            <div class="pricing-card">
+                <h3 class="plan-title">Базовий</h3>
+                <p class="plan-price">1500 ₴</p>
+                <p class="plan-desc">Ідеально для малих проєктів та початківців.</p>
+                <ul class="plan-features">
+                    <li>Лендинг</li>
+                    <li>Базовий UI дизайн</li>
+                    <li>Адаптивна верстка</li>
+                    <li>Email підтримка</li>
+                </ul>
+                <a class="plan-btn" href="#contact">Обрати</a>
+            </div>
+
+            <div class="pricing-card featured">
+                <div class="badge">Популярний</div>
+                <h3 class="plan-title">Стандарт</h3>
+                <p class="plan-price">3200 ₴</p>
+                <p class="plan-desc">Оптимальний варіант для бізнесу.</p>
+                <ul class="plan-features">
+                    <li>UI/UX дизайн</li>
+                    <li>Розробка сайту</li>
+                    <li>Повна адаптивність</li>
+                    <li>Прототипування</li>
+                </ul>
+                <a class="plan-btn" href="#contact">Обрати</a>
+            </div>
+
+            <div class="pricing-card">
+                <h3 class="plan-title">Преміум</h3>
+                <p class="plan-price">5500 ₴</p>
+                <p class="plan-desc">Максимум можливостей і підтримки.</p>
+                <ul class="plan-features">
+                    <li>Повний UI/UX дизайн</li>
+                    <li>Frontend розробка</li>
+                    <li>Виправлення помилок та підтримка</li>
+                    <li>Персональні консультації</li>
+                </ul>
+                <a class="plan-btn" href="#contact">Обрати</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="logo-text">
+                <img src="images/logocompany.png" alt="Логотип" class="footer-logo" />
+                <span class="logo-name">Mumair</span>
+            </div>
+
+            <nav class="footer-menu">
+                <a href="#">Головна</a>
+                <a href="#">Про мене</a>
+                <a href="#">Послуги</a>
+                <a href="#">Проєкти</a>
+                <a href="#">Відгуки</a>
+                <a href="#">Контакт</a>
+            </nav>
+
+            <div class="footer-social">
+                <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+                <a href="#"><img src="images/in.png" alt="LinkedIn" /></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2023 <span>Mumair</span> Усі права захищено, Inc.</p>
+        </div>
+    </footer>
+
+    <script src="testonials.js"></script>
+</body>
+
+</html>

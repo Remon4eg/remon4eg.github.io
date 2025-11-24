@@ -222,6 +222,29 @@ body {
     transition: background-color 0.3s;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-item {
+    display: flex;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    color: #f47920 !important; 
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+    display: block; 
+}
+
+.swiper-pagination-bullet-active {
+    background: #f47920 !important; 
+}
+
 
 footer {
     font-family: Arial, sans-serif;

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Портфоліо</title>
+    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" integrity="sha512-e8G4Z5/jYQ7B59K4M8qN/n7uQ4wGvW0L8eT/20C8/P28jQG/tY+Yg/4v9XFmR5t4J7lG9N6Hw7F1ZtH3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js" integrity="sha512-W4wW3/fF9GjJc5f8g4N/n7uQ4wGvW0L8eT/20C8/P28jQG/tY+Yg/4v9XFmR5t4J7lG9N6Hw7F1ZtH3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-travel">
+            <img class="logo-img" src="imagesabout/logocompany.png" alt="logo-travel" />
+            <span><strong>M</strong>umair</span>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="projects.html">Про мене</a></li>
+                <li><a href="../page404/page404.html">Послуги</a></li>
+                <li><a href="../page404/page404.html">Проєкти</a></li>
+                <li><a href="../testimonials/testimonials.html">Портфоліо</a></li>
+                <li><a href="#" id="contactBtn">Зв'язок з нами</a></li>
+            </ul>
+        </nav>
+
+        <div class="modal" id="contactModal">
+            <div class="modal-content">
+                <span class="close-modal" id="closeModal">&times;</span>
+
+                <h2>Зв’язатися зі мною</h2>
+
+                <form class="modal-form">
+                    <label>Ваше ім’я</label>
+                    <input type="text" placeholder="Введіть ваше ім’я" required>
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Введіть ваш email" required>
+
+                    <label>Повідомлення</label>
+                    <textarea placeholder="Ваше повідомлення..." required></textarea>
+
+                    <button type="submit" class="modal-btn">Надіслати</button>
+                </form>
+            </div>
+        </div>
+
+        <a href="../page404/page404.html" class="btn">Завантажити CV</a>
+    </header>
+
+    <button id="scrollToTopBtn" title="Угору">&#9650;</button>
+
+    <section class="hero-about">
+        <div class="container">
+            <h1>Історія за пікселями</h1>
+            <p>Я — пристрасний UI/UX дизайнер, який прагне вирішувати складні задачі користувачів за допомогою дослідницького та орієнтованого на людину дизайну. Моя місія — створювати цифрові продукти, які не просто виглядають красиво, а є інтуїтивно зрозумілими та справді корисними.</p>
+        </div>
+    </section>
+
+    <section class="philosophy-section">
+        <div class="container">
+            <h2 class="section-heading">Моя філософія дизайну</h2>
+            <p class="section-description">Я вважаю, що найкращий дизайн — непомітний. Це гармонійне поєднання естетики, продуманої функціональності та глибокого розуміння користувача. У своїй роботі я поєдную кількісні дослідження з креативною візуальною подачею, щоб створювати по-справжньому впливові досвіди.</p>
+            
+            <div class="philosophy-grid">
+                <div class="value-card">
+                    <span class="icon-placeholder">💡</span>
+                    <h3>Дизайн із емпатією</h3>
+                    <p>Я завжди починаю з потреб, болей та цілей користувача, щоб рішення були релевантними й корисними.</p>
+                </div>
+                <div class="value-card">
+                    <span class="icon-placeholder">✨</span>
+                    <h3>Радикальна простота</h3>
+                    <p>Фокус на головному та усунення зайвого навантаження, щоб інтерфейси були легкими та природними у використанні.</p>
+                </div>
+                <div class="value-card">
+                    <span class="icon-placeholder">🔄</span>
+                    <h3>Постійне вдосконалення</h3>
+                    <p>Дизайн ніколи не буває остаточним. Я використовую фідбек і дані, щоб постійно покращувати користувацький досвід.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="workflow-process">
+        <div class="container">
+            <h2 class="section-heading">Мій повний процес дизайну</h2>
+            <p class="section-description">Системний підхід, що допомагає перетворити ідею на успішний продукт.</p>
+
+            <div class="process-steps">
+                <div class="step-card">
+                    <span class="step-number">01</span>
+                    <h4>Дослідження та аналіз</h4>
+                    <p>Інтерв’ю з користувачами, опитування, аналіз конкурентів, створення персон та карт шляхів користувачів.</p>
+                </div>
+                
+                <div class="step-card">
+                    <span class="step-number">02</span>
+                    <h4>Визначення та ідеї</h4>
+                    <p>Інформаційна архітектура, створення карти сайту, низькодеталізовані вайрфрейми та ескізи концептів.</p>
+                </div>
+
+                <div class="step-card">
+                    <span class="step-number">03</span>
+                    <h4>Дизайн та прототипи</h4>
+                    <p>Високодеталізований UI дизайн, створення бібліотеки компонентів, інтерактивні прототипи та візуальне шліфування.</p>
+                </div>
+                
+                <div class="step-card">
+                    <span class="step-number">04</span>
+                    <h4>Тестування та покращення</h4>
+                    <p>Юзабіліті-тестування, A/B тести, аналіз даних та підготовка матеріалів для передачі в розробку.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="skills-section">
+    <div class="container">
+        <h2 class="section-heading centered-heading">Експертиза та інструменти</h2>
+        
+        <p class="section-description centered-description">
+            Мої ключові навички та інструменти, які я використовую для створення виняткових цифрових продуктів.
+        </p>
+
+        <div class="expertise-cards-grid">
+
+            <div class="expertise-card">
+                <div class="card-icon">💡</div> 
+                <h3>UX та проєктування взаємодії</h3>
+                <ul>
+                    <li>Дослідження користувачів та інтерв’ю</li>
+                    <li>Інформаційна архітектура (IA)</li>
+                    <li>Створення вайрфреймів та прототипування</li>
+                    <li>Юзабіліті-тестування та аналіз</li>
+                    <li>Побудова шляхів користувачів</li>
+                    <li>Стандарти доступності (A11y)</li>
+                </ul>
+            </div>
+
+            <div class="expertise-card">
+                <div class="card-icon">🎨</div> 
+                <h3>UI та візуальний дизайн</h3>
+                <ul>
+                    <li>Візуальна ієрархія та компонування</li>
+                    <li>Теорія кольору та типографіка</li>
+                    <li>Дизайн-системи та бібліотеки компонентів</li>
+                    <li>Адаптивний веб-дизайн</li>
+                    <li>Реалізація айдентики бренду</li>
+                    <li>Високодеталізовані макети</li>
+                </ul>
+            </div>
+
+            <div class="expertise-card tools-card">
+                <div class="card-icon">🛠️</div> 
+                <h3>Основні інструменти</h3>
+                <div class="tool-badges-new">
+                    <span>Figma</span>
+                    <span>Sketch</span>
+                    <span>Adobe XD</span>
+                    <span>Miro / FigJam</span>
+                    <span>InVision</span>
+                    <span>Illustrator</span>
+                    <span>Photoshop</span>
+                    <span>After Effects</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="logo-text">
+                <img src="imagesabout/logocompany.png" alt="Logo" class="footer-logo" />
+                <span class="logo-name">Mumair</span>
+            </div>
+
+            <nav class="footer-menu">
+                <a href="#">Головна</a>
+                <a href="#">Про мене</a>
+                <a href="#">Послуги</a>
+                <a href="#">Проєкти</a>
+                <a href="#">Відгуки</a>
+                <a href="#">Контакт</a>
+            </nav>
+
+            <div class="footer-social">
+                <a href="#"><img src="imagesabout/facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="imagesabout/twitter.png" alt="Twitter" /></a>
+                <a href="#"><img src="imagesabout/instagram.png" alt="Instagram" /></a>
+                <a href="#"><img src="imagesabout/in.png" alt="LinkedIn" /></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2023 <span>Mumair</span> Усі права захищено, Inc.</p>
+        </div>
+    </footer>
+
+    <script src="projects.js"></script>
+</body>
+</html>

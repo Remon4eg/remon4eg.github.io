@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="normilize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css"
+    integrity="sha512-e8G4Z5/jYQ7B59K4M8qN/n7uQ4wGvW0L8eT/20C8/P28jQG/tY+Yg/4v9XFmR5t4J7lG9N6Hw7F1ZtH3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"
+  integrity="sha512-W4wW3/fF9GjJc5f8g4N/n7uQ4wGvW0L8eT/20C8/P28jQG/tY+Yg/4v9XFmR5t4J7lG9N6Hw7F1ZtH3g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo-travel">
+      <img class="logo-img" src="images/logocompany.png" alt="logo-travel" />
+      <span><strong>M</strong>umair</span>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="projects/projects.html">Про мене</a></li>
+        <li><a href="page404/page404.html">Послуги</a></li>
+        <li><a href="page404/page404.html">Проєкти</a></li>
+        <li><a href="testimonials/testimonials.html">Портфоліо</a></li>
+        <li><a href="#" id="contactBtn">Зв'язок з нами</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="modal" id="contactModal">
+      <div class="modal-content">
+        <span class="close-modal" id="closeModal">&times;</span>
+
+        <h2>Зв’язатися зі мною</h2>
+
+        <form class="modal-form">
+          <label>Ваше ім’я</label>
+          <input type="text" placeholder="Введіть ваше ім’я" required>
+
+          <label>Email</label>
+          <input type="email" placeholder="Введіть ваш email" required>
+
+          <label>Повідомлення</label>
+          <textarea placeholder="Напишіть ваше повідомлення..." required></textarea>
+
+          <button type="submit" class="modal-btn">Надіслати</button>
+        </form>
+      </div>
+    </div>
+
+    <a href="page404/page404.html" class="btn">Завантажити CV</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="intro">Привіт, я</p>
+      <h2><span class="orange">Мухаммад Умаір</span></h2>
+      <h1> UI & UX <br> Дизайнер </h1>
+      <p class="desc">
+        Я створюю інтуїтивні цифрові рішення, які поєднують естетичну привабливість з орієнтованим на користувача підходом. Моя робота поєднує дослідження, візуальний дизайн та плавну взаємодію, щоб створювати продукти, які відчуваються природними, цікавими та ефективними.
+      </p>
+      <button id="hire-me-modal-trigger" class="hire-btn-main">Найняти мене</button>
+
+      <div id="hire-user-modal" class="hire-modal-backdrop">
+        <div class="hire-modal-content">
+          <span class="hire-modal-close-btn">&times;</span>
+          <h2>Запит на співпрацю</h2>
+          <p>Будь ласка, заповніть форму, і я зв’яжуся з вами найближчим часом.</p>
+
+          <form id="hire-contact-form">
+            <div class="hire-form-group">
+              <label for="hire-name">Ваше ім’я:</label>
+              <input type="text" id="hire-name" required>
+            </div>
+
+            <div class="hire-form-group">
+              <label for="hire-email">Ваш Email:</label>
+              <input type="email" id="hire-email" required>
+            </div>
+
+            <div class="hire-form-group">
+              <label for="hire-service">Цікавить послуга:</label>
+              <select id="hire-service" required>
+                <option value="" disabled selected>Оберіть послугу</option>
+                <option value="ui_design">UI Дизайн</option>
+                <option value="ux_design">UX Дизайн</option>
+                <option value="full_design">UI/UX Дизайн (повний цикл)</option>
+                <option value="consultation">Консультація</option>
+                <option value="other">Інше</option>
+              </select>
+            </div>
+
+            <div class="hire-form-group">
+              <label for="hire-project-details">Деталі/Повідомлення:</label>
+              <textarea id="hire-project-details" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="hire-submit-btn">Надіслати запит</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <div class="circle">
+        <img src="images/pacuk2.png" alt="Профільне фото" />
+      </div>
+      <div class="overlay"></div>
+      <div class="socials">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/in.png" alt="LinkedIn" /></a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about-section">
+    <div class="photo-wrapper">
+      <a href="#"><img src="images/pacuklol.png" alt="photo-wrapper" /></a>
+    </div>
+
+    <div class="about-content">
+      <h2>Про мене</h2>
+      <p>
+        Я UI/UX та продуктовий дизайнер, який створює цифрові рішення для реальних потреб. Мій підхід базується на дослідженнях, аналізі поведінки користувачів і чистому візуальному дизайні, щоб створювати продукти, які одночасно функціональні й привабливі.
+      </p>
+
+      <div class="skill">
+        <div class="skill-label">UX</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%;"></div>
+          <div class="slider-thumb" style="left: 90%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label">Дизайн сайтів</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 75%;"></div>
+          <div class="slider-thumb" style="left: 75%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label">Дизайн додатків</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 95%;"></div>
+          <div class="slider-thumb" style="left: 95%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label">Графічний дизайн</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%;"></div>
+          <div class="slider-thumb" style="left: 85%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services-section">
+    <h2 class="section-title">Послуги</h2>
+    <p class="section-subtitle">
+      Я створюю дизайн-рішення, які допомагають брендам розвиватися завдяки функціональним та естетичним інтерфейсам.
+    </p>
+
+    <div class="services-container">
+
+      <div class="service-card">
+        <img src="images/uix1.png" alt="UI/UX Icon">
+        <h3>UI/UX</h3>
+        <p>Створюю інтерфейси, що покращують зручність та якість користувацької взаємодії.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/webdesign.png" alt="Web Design Icon">
+        <h3>Веб-дизайн</h3>
+        <p>Розробляю сучасні сайти, що підсилюють онлайн-присутність брендів.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/webphone.png" alt="App Design Icon">
+        <h3>Дизайн додатків</h3>
+        <p>Проєктую мобільні додатки з плавним UX та стильним інтерфейсом.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/4fotka.png" alt="Graphic Design Icon">
+        <h3>Графічний дизайн</h3>
+        <p>Створюю візуальні матеріали, що чітко передають стиль вашого бренду.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="projects-section">
+    <h2 class="section-title">Мої проєкти</h2>
+    <p class="section-subtitle">
+      Підбірка останніх робіт: лендинги, інтерфейси та повні редизайни продуктів.
+    </p>
+
+    <div class="project-filters">
+      <button class="filter-btn active">Усі</button>
+      <button class="filter-btn">UI/UX</button>
+      <button class="filter-btn">Веб-дизайн</button>
+      <button class="filter-btn">Дизайн додатків</button>
+      <button class="filter-btn">Графічний дизайн</button>
+    </div>
+
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="images/photosection1.png" alt="Project 1">
+        <p class="project-category">Веб-дизайн</p>
+        <h3 class="project-title">Дизайн лендингу AirCalling</h3>
+      </div>
+
+      <div class="project-card">
+        <img src="images/photosection2.png" alt="Project 2">
+        <p class="project-category">Веб-дизайн</p>
+        <h3 class="project-title">Дизайн бізнес-лендингу</h3>
+      </div>
+
+      <div class="project-card">
+        <img src="images/photosection3.png" alt="Project 3">
+        <p class="project-category">Веб-дизайн</p>
+        <h3 class="project-title">Дизайн сторінки E-commerce</h3>
+      </div>
+    </div>
+  </section>
+
+  <button id="scrollToTopBtn" title="Go to top">&#9650;</button>
+
+
+  <section class="testimonials-section">
+    <h2 class="section-title">Відгуки</h2>
+    <p class="section-subtitle">
+      Відгуки клієнтів, які цінують якість, комунікацію та орієнтованість на користувача.
+    </p>
+
+    <div class="testimonial-card">
+      <img src="images/pacanchuk.jpg" alt="Фото клієнта" class="testimonial-img">
+      <p class="testimonial-text">
+        <span class="quote">“</span>
+        Співпраця з Умаіром була чудовим досвідом. Він миттєво зрозумів наше бачення і перетворив його на чистий, інтуїтивний та привабливий дизайн. 
+        Його комунікація та увага до деталей були винятковими.
+        <span class="quote">”</span>
+      </p>
+      <h4 class="testimonial-name">Ім’я</h4>
+      <p class="testimonial-role">CEO</p>
+    </div>
+
+    <div class="testimonial-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+
+  <section class="contact-section">
+    <h2>Створімо дизайн разом</h2>
+    <p class="subhead">
+      Маєте ідею? Я із задоволенням допоможу втілити її в життя. Залиште свій email, і я зв’яжуся з вами.
+    </p>
+
+    <form class="contact-form" action="#" method="POST">
+      <input type="email" name="email" placeholder="Введіть ваш email" required>
+      <button type="submit">Зв’язатися зі мною</button>
+    </form>
+  </section>
+
+
+  <footer>
+    <div class="footer-top">
+      <div class="logo-text">
+        <img src="images/logocompany.png" alt="Logo" class="footer-logo" />
+        <span class="logo-name">Mumair</span>
+      </div>
+
+      <nav class="footer-menu">
+        <a href="#">Головна</a>
+        <a href="#">Про мене</a>
+        <a href="#">Послуги</a>
+        <a href="testimonials/testimonials.html">Проєкти</a>
+        <a href="#">Відгуки</a>
+        <a href="#">Контакт</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/in.png" alt="LinkedIn" /></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2023 <span>Mumair</span> Усі права захищено, Inc.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

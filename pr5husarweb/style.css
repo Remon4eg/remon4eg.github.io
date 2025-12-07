@@ -1,0 +1,122 @@
+/* Загальні стилі сторінки */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Контейнер додатку */
+.todo-app {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px 25px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-app h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Поле введення нового завдання */
+#newTodoInput {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+/* Список завдань */
+#todoList {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Один елемент завдання */
+.todo-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+/* Ліва частина: чекбокс + текст */
+.todo-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Чекбокс */
+.todo-checkbox {
+  margin-top: 3px;
+}
+
+/* Контейнер тексту + дата */
+.todo-text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-text {
+  margin: 0;
+}
+
+.todo-date {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Праворуч: кнопка "х" */
+.todo-delete-btn {
+  border: none;
+  background: transparent;
+  color: #c0392b;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+/* Виконане завдання */
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* При виконанні чекбокс ховається */
+.todo-item.completed .todo-checkbox {
+  display: none;
+}
+
+/* Поле редагування (дубльклік по тексту) */
+.todo-edit-input {
+  padding: 4px 6px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* При наведенні */
+.todo-item:hover {
+  background: #fafafa;
+}

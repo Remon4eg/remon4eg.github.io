@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторна робота №3 – Дата та час у JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Лабораторна робота №3: Робота з датою та часом у JavaScript</h1>
+<p class="note">
+  І рівень – теоретичні методи; ІІ рівень – практичні приклади; ІІІ рівень – індивідуальні завдання.
+  Використовуй кнопки для запуску кожного прикладу окремо.
+</p>
+
+<!-- ========== І РІВЕНЬ: ТЕОРІЯ (Date-методи) ========== -->
+<section>
+  <h2>І рівень (4–6 балів): Теоретичні приклади методів Date</h2>
+
+  <button onclick="showCurrentDateInfo()">Показати поточну дату та компоненти</button>
+  <button onclick="showCreationExamples()">Приклади створення об’єкта Date</button>
+  <button onclick="showSetAndAutoCorrection()">Приклад set* та автокорекції</button>
+  <button onclick="showTimestampExamples()">Timestamp, різниця дат та Date.now()</button>
+  <button onclick="showParseExample()">Приклад Date.parse() та рядка дати</button>
+
+  <div id="theoryOutput" class="output"></div>
+</section>
+
+<!-- ========== ІІ РІВЕНЬ: ПРАКТИЧНІ ПРИКЛАДИ З ЛАБИ ========== -->
+<section>
+  <h2>ІІ рівень (7–9 балів): Практичні приклади</h2>
+
+  <h3>1. Різниця до Нового року</h3>
+  <button onclick="showNewYearDiff()">Порахувати, скільки залишилось до Нового року</button>
+
+  <h3>2. Локальне форматування дати (toLocaleString)</h3>
+  <button onclick="showLocaleDateExamples()">Показати сьогоднішню дату в різних форматах</button>
+
+  <h3>3. П’ятниця 13-го для вибраного року</h3>
+  <label for="fridayYearSelect">Оберіть рік:</label>
+  <select id="fridayYearSelect">
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+    <option value="2025">2025</option>
+  </select>
+  <button onclick="showFridays13()">Показати всі п’ятниці 13-го</button>
+
+  <div id="practiceOutput" class="output"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

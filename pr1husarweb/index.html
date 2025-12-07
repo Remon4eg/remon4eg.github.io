@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Практична робота – Методи масивів (JavaScript)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Практична робота: Методи масивів у JavaScript</h1>
+<p class="note">
+  Дані для прикладів уже зашиті в JavaScript. Використовуйте кнопки, щоб протестувати кожне завдання.
+</p>
+
+<!-- ========================= ЗАВДАННЯ 1 ========================= -->
+<section>
+  <h2>1. Фільтрація та пошук у масиві об'єктів (products)</h2>
+
+  <p><strong>Масив products:</strong></p>
+  <div id="productsPreview" class="output"></div>
+
+  <button onclick="handleGetAvailableProducts()">Показати товари в наявності</button>
+
+  <br><br>
+  <label>Назва товару:</label><br>
+  <input id="productNameInput" type="text" placeholder="Наприклад: Laptop">
+  <button onclick="handleFindProductByName()">Знайти товар</button>
+
+  <div id="task1Output" class="output"></div>
+</section>
+
+<!-- ========================= ЗАВДАННЯ 2 ========================= -->
+<section>
+  <h2>2. Групування та сортування масиву (students)</h2>
+
+  <p><strong>Масив students:</strong></p>
+  <div id="studentsPreview" class="output"></div>
+
+  <button onclick="handleGroupBy()">Згрупувати за групами</button>
+  <button onclick="handleSortStudentsByGrade()">Сортувати за оцінками</button>
+
+  <div id="task2Output" class="output"></div>
+</section>
+
+<!-- ========================= ЗАВДАННЯ 3 ========================= -->
+<section>
+  <h2>3. Статистичний аналіз (employees)</h2>
+
+  <p><strong>Масив employees:</strong></p>
+  <div id="employeesPreview" class="output"></div>
+
+  <button onclick="handleGetAverageSalary()">Середня зарплата</button>
+  <button onclick="handleFindMostExperiencedEmployee()">Найдосвідченіший працівник</button>
+
+  <div id="task3Output" class="output"></div>
+</section>
+
+<!-- ========================= ЗАВДАННЯ 4 ========================= -->
+<section>
+  <h2>4. Аналіз книг (books)</h2>
+
+  <p><strong>Масив books:</strong></p>
+  <div id="booksPreview" class="output"></div>
+
+  <button onclick="handleGetUnreadBooks()">Показати непрочитані книги</button>
+
+  <br><br>
+  <label>Автор:</label><br>
+  <input id="authorInput" type="text" placeholder="Наприклад: Tolkien">
+  <button onclick="handleGetBooksByAuthor()">Пошук книг автора</button>
+
+  <br><br>
+  <button onclick="handleGetTopRatedBooks()">Топ-книги (рейтинг > 4)</button>
+
+  <div id="task4Output" class="output"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
